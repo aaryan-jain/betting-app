@@ -9,17 +9,17 @@
 
 @layer base {
   body {
-    @apply font-sans bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-slate-950 overflow-x-hidden;
+    @apply font-sans bg-gradient-to-tr from-slate-50 via-slate-100 to-sky-50/50 text-slate-800 antialiased selection:bg-sky-200 selection:text-slate-900 min-h-screen overflow-x-hidden;
   }
 }
 
-/* Custom glowing and custom utilities matching Bento Grid Theme */
+/* Premium Light-Themed Glass Panels and Cards */
 .glass-panel {
-  @apply bg-slate-900 border border-slate-800 rounded-3xl shadow-xl;
+  @apply bg-white/90 border border-slate-200/85 rounded-3xl shadow-sm shadow-slate-200/40 backdrop-blur-md;
 }
 
 .glass-card {
-  @apply bg-slate-950 border border-slate-800 rounded-2xl hover:border-slate-700 transition-all duration-200;
+  @apply bg-white border border-slate-200/60 rounded-2xl hover:border-slate-300 hover:shadow-md transition-all duration-250;
 }
 
 /* Hide scrollbar */
@@ -30,3 +30,4 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
